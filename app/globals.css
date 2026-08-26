@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cream: #F6F1E8;
+    --forest: #12372A;
+    --forest-dark: #0D261D;
+    --forest-light: #1D5441;
+    --charcoal: #171717;
+    --charcoal-muted: #404040;
+    --charcoal-light: #737373;
+    --gold: #C5A46D;
+    --gold-muted: #E2D3B8;
+    --sage: #A8B5A0;
+    --sage-light: #DCE3D8;
+    --white: #FFFFFF;
+    --card-bg: #FFFFFF;
+    --border-subtle: rgba(23, 23, 23, 0.08);
+    --border-medium: rgba(23, 23, 23, 0.15);
+  }
+
+  * {
+    border-color: var(--border-subtle);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #F6F1E8;
+    color: #171717;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    background: #12372A;
+    color: #F6F1E8;
+  }
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F1E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5CBBF;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #12372A;
+}
+
+/* Editorial Glass & Surface utilities */
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  box-shadow: 0 4px 20px -4px rgba(23, 23, 23, 0.04);
+}
+
+.editorial-card-elevated {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(23, 23, 23, 0.12);
+  box-shadow: 0 20px 40px -15px rgba(23, 23, 23, 0.08);
+}
+
+.editorial-tag {
+  background-color: rgba(18, 55, 42, 0.06);
+  color: #12372A;
+  border: 1px solid rgba(18, 55, 42, 0.12);
+}
+
+.editorial-badge-gold {
+  background-color: rgba(197, 164, 109, 0.12);
+  color: #8C6A34;
+  border: 1px solid rgba(197, 164, 109, 0.25);
+}
+
+.editorial-badge-sage {
+  background-color: rgba(168, 181, 160, 0.2);
+  color: #384632;
+  border: 1px solid rgba(168, 181, 160, 0.35);
+}
+
+/* Subtle editorial paper grain */
+.paper-texture {
+  background-image: radial-gradient(rgba(23, 23, 23, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Editorial border line */
+.editorial-divider {
+  height: 1px;
+  background-color: rgba(23, 23, 23, 0.1);
+  width: 100%;
+}
+
+/* Text balance and typography helpers */
+.text-balance {
+  text-wrap: balance;
+}
+
+.tracking-editorial-title {
+  letter-spacing: -0.025em;
+}
+
+.tracking-editorial-label {
+  letter-spacing: 0.15em;
+}

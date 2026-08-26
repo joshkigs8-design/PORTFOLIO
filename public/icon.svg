@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#08090E" />
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="url(#borderGlow)" stroke-width="2" />
+  <path d="M22 20V40C22 42.2091 20.2091 44 18 44" stroke="url(#jGradient)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M34 20V44M44 20L34 32L44 44" stroke="url(#kGradient)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="46" cy="18" r="2.5" fill="#06B6D4" />
+  <defs>
+    <linearGradient id="borderGlow" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1" />
+      <stop offset="0.5" stop-color="#06B6D4" />
+      <stop offset="1" stop-color="#10B981" />
+    </linearGradient>
+    <linearGradient id="jGradient" x1="18" y1="20" x2="24" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#818CF8" />
+      <stop offset="1" stop-color="#6366F1" />
+    </linearGradient>
+    <linearGradient id="kGradient" x1="34" y1="20" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" />
+      <stop offset="1" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+</svg>
