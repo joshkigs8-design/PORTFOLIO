@@ -195,147 +195,58 @@ export function EditorialMockup({ type }: EditorialMockupProps) {
         </div>
 
         <div className="pt-3 mt-3 border-t border-purple-900/10 flex items-center justify-between text-[11px] font-mono text-[#582098]">
-          <span>edupath-ai.ke</span>
+          <span>edupathai.site</span>
           <span>Democratizing Academic Placement</span>
         </div>
       </div>
     );
   }
 
-  if (type === "onfits") {
-    return (
-      <div className="w-full bg-[#181114] rounded-xl border border-[#C5A46D]/25 p-4 sm:p-7 shadow-md text-[#F6F1E8] font-sans">
-        {/* High-Fashion Editorial Header */}
-        <div className="flex items-baseline justify-between pb-4 border-b border-white/10">
-          <div className="flex items-baseline gap-3">
-            <span className="font-serif tracking-widest text-xl font-bold text-white">
-              O&amp;N FITS
-            </span>
-            <span className="text-[10px] font-mono tracking-widest text-[#C5A46D] uppercase">
-              // STUDIO LOOKBOOK SS26
-            </span>
-          </div>
-          <span className="text-[10px] font-mono text-white/80 bg-white/10 px-2.5 py-1 rounded border border-white/10">
-            CURATED APPAREL
-          </span>
-        </div>
-
-        {/* Fashion Garment Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-4">
-          <div className="p-3 rounded-lg bg-black/40 border border-white/10 space-y-1.5">
-            <div className="text-[10px] font-mono text-[#C5A46D] uppercase">DROP 04</div>
-            <div className="font-bold text-white text-xs sm:text-sm">Oversized Trench</div>
-            <div className="text-[10px] font-mono text-zinc-400">Heavyweight Twill</div>
-            <div className="text-xs font-mono text-white font-bold pt-1">Ksh 8,500</div>
-          </div>
-
-          <div className="p-3 rounded-lg bg-black/40 border border-white/10 space-y-1.5">
-            <div className="text-[10px] font-mono text-[#C5A46D] uppercase">LIMITED</div>
-            <div className="font-bold text-white text-xs sm:text-sm">Cargo Trouser</div>
-            <div className="text-[10px] font-mono text-zinc-400">Obsidian Carbon</div>
-            <div className="text-xs font-mono text-white font-bold pt-1">Ksh 5,200</div>
-          </div>
-
-          <div className="hidden sm:block p-3 rounded-lg bg-black/40 border border-white/10 space-y-1.5">
-            <div className="text-[10px] font-mono text-[#C5A46D] uppercase">ARCHIVE</div>
-            <div className="font-bold text-white text-xs sm:text-sm">French Terry Hoodie</div>
-            <div className="text-[10px] font-mono text-zinc-400">500 GSM Boxy</div>
-            <div className="text-xs font-mono text-white font-bold pt-1">Ksh 6,000</div>
-          </div>
-        </div>
-
-        <div className="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
-          <span>oandnfits.co.ke</span>
-          <span className="text-[#C5A46D] font-bold">EXPLORE LOOKBOOK ↗</span>
-        </div>
-      </div>
-    );
-  }
-
-  if (type === "pesatrend") {
-    return (
-      <div className="w-full bg-[#FAFDFB] rounded-xl border border-emerald-900/10 p-4 sm:p-7 shadow-sm text-[#171717] font-sans">
-        {/* Mockup Header */}
-        <div className="flex items-center justify-between pb-4 border-b border-emerald-900/10">
-          <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-lg bg-[#0F5A3E] text-white flex items-center justify-center font-bold text-xs">
-              PT
-            </div>
-            <div>
-              <div className="font-bold text-xs sm:text-sm text-[#0F5A3E]">PesaTrend POS</div>
-              <div className="text-[10px] font-mono text-[#171717]/60">Merchant Cashflow Intelligence</div>
-            </div>
-          </div>
-          <span className="text-[11px] font-mono text-[#0F5A3E] bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
-            Offline PWA Ready
-          </span>
-        </div>
-
-        {/* POS Stats */}
-        <div className="grid grid-cols-2 gap-3 my-4">
-          <div className="p-3 bg-white rounded-lg border border-emerald-900/10 space-y-0.5">
-            <div className="text-[10px] font-mono text-zinc-500 uppercase">Today Gross Sales</div>
-            <div className="text-base sm:text-lg font-bold font-serif text-[#0F5A3E]">Ksh 42,850</div>
-            <div className="text-[10px] text-emerald-700 font-mono">68 Transactions</div>
-          </div>
-          <div className="p-3 bg-white rounded-lg border border-emerald-900/10 space-y-0.5">
-            <div className="text-[10px] font-mono text-zinc-500 uppercase">M-Pesa Split</div>
-            <div className="text-base sm:text-lg font-bold font-serif text-[#171717]">82% Digital Till</div>
-            <div className="text-[10px] text-zinc-500 font-mono">18% Cash in Drawer</div>
-          </div>
-        </div>
-
-        <div className="p-3 bg-emerald-50/50 rounded-lg border border-emerald-100 flex items-center justify-between text-xs">
-          <span className="font-medium text-zinc-700">Inventory Alert: Espresso Roast (2kg remaining)</span>
-          <span className="font-mono text-amber-800 font-bold bg-amber-100 px-2 py-0.5 rounded text-[10px]">
-            Reorder
-          </span>
-        </div>
-
-        <div className="pt-3 mt-3 border-t border-emerald-900/10 flex items-center justify-between text-[11px] font-mono text-[#0F5A3E]">
-          <span>pesatrend.io</span>
-          <span>1-Touch Retail Checkout</span>
-        </div>
-      </div>
-    );
-  }
-
-  // Fallback: Josh Data Solution
+  // O&N FITS (type === "onfits")
   return (
-    <div className="w-full bg-[#FAF9F5] rounded-xl border border-[#C5A46D]/20 p-4 sm:p-7 shadow-sm text-[#171717] font-sans">
-      {/* Mockup Header */}
-      <div className="flex items-center justify-between pb-4 border-b border-[#C5A46D]/20">
-        <div className="flex items-center gap-2.5">
-          <div className="w-7 h-7 rounded-lg bg-[#8B6B38] text-white flex items-center justify-center font-bold text-xs">
-            JDS
-          </div>
-          <div>
-            <div className="font-bold text-xs sm:text-sm text-[#8B6B38]">Josh Data Solution</div>
-            <div className="text-[10px] font-mono text-[#171717]/60">Enterprise Digital Systems</div>
-          </div>
+    <div className="w-full bg-[#181114] rounded-xl border border-[#C5A46D]/25 p-4 sm:p-7 shadow-md text-[#F6F1E8] font-sans">
+      {/* High-Fashion Editorial Header */}
+      <div className="flex items-baseline justify-between pb-4 border-b border-white/10">
+        <div className="flex items-baseline gap-3">
+          <span className="font-serif tracking-widest text-xl font-bold text-white">
+            O&amp;N FITS
+          </span>
+          <span className="text-[10px] font-mono tracking-widest text-[#C5A46D] uppercase">
+            // STUDIO LOOKBOOK SS26
+          </span>
         </div>
-        <span className="text-[11px] font-mono text-[#8B6B38] bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
-          99.9% SLA Architecture
+        <span className="text-[10px] font-mono text-white/80 bg-white/10 px-2.5 py-1 rounded border border-white/10">
+          CURATED APPAREL
         </span>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4">
-        <div className="p-3 bg-white rounded-lg border border-[#C5A46D]/15 space-y-1">
-          <div className="font-bold text-xs text-[#171717]">Custom ERP &amp; Pipelines</div>
-          <div className="text-[11px] text-zinc-600 font-mono">Dockerized Microservices &amp; PostgreSQL</div>
-          <div className="text-[10px] text-emerald-700 font-mono font-semibold pt-1">Active Integration</div>
+      {/* Fashion Garment Cards */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 my-4">
+        <div className="p-3 rounded-lg bg-black/40 border border-white/10 space-y-1.5">
+          <div className="text-[10px] font-mono text-[#C5A46D] uppercase">DROP 04</div>
+          <div className="font-bold text-white text-xs sm:text-sm">Oversized Trench</div>
+          <div className="text-[10px] font-mono text-zinc-400">Heavyweight Twill</div>
+          <div className="text-xs font-mono text-white font-bold pt-1">Ksh 8,500</div>
         </div>
 
-        <div className="p-3 bg-white rounded-lg border border-[#C5A46D]/15 space-y-1">
-          <div className="font-bold text-xs text-[#171717]">Automated API Connectors</div>
-          <div className="text-[11px] text-zinc-600 font-mono">Webhook Queues &amp; Multi-DB Sync</div>
-          <div className="text-[10px] text-zinc-500 font-mono font-semibold pt-1">Zero Latency Backlog</div>
+        <div className="p-3 rounded-lg bg-black/40 border border-white/10 space-y-1.5">
+          <div className="text-[10px] font-mono text-[#C5A46D] uppercase">LIMITED</div>
+          <div className="font-bold text-white text-xs sm:text-sm">Cargo Trouser</div>
+          <div className="text-[10px] font-mono text-zinc-400">Obsidian Carbon</div>
+          <div className="text-xs font-mono text-white font-bold pt-1">Ksh 5,200</div>
+        </div>
+
+        <div className="hidden sm:block p-3 rounded-lg bg-black/40 border border-white/10 space-y-1.5">
+          <div className="text-[10px] font-mono text-[#C5A46D] uppercase">ARCHIVE</div>
+          <div className="font-bold text-white text-xs sm:text-sm">French Terry Hoodie</div>
+          <div className="text-[10px] font-mono text-zinc-400">500 GSM Boxy</div>
+          <div className="text-xs font-mono text-white font-bold pt-1">Ksh 6,000</div>
         </div>
       </div>
 
-      <div className="pt-3 border-t border-[#C5A46D]/20 flex items-center justify-between text-[11px] font-mono text-[#8B6B38]">
-        <span>joshdatasolution.com</span>
-        <span>Bespoke Engineering Solutions</span>
+      <div className="pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-zinc-400">
+        <span>oandnfits.co.ke</span>
+        <span className="text-[#C5A46D] font-bold">EXPLORE LOOKBOOK ↗</span>
       </div>
     </div>
   );

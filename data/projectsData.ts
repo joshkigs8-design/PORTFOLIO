@@ -108,8 +108,8 @@ export const projectsData: ProjectItem[] = [
       { label: "Guidance Time", value: "< 2 mins" },
       { label: "Career Fields", value: "30+ Clusters" },
     ],
-    liveUrl: "https://edupath-ai.vercel.app",
-    displayUrl: "edupath-ai.ke",
+    liveUrl: "https://edupathai.site",
+    displayUrl: "edupathai.site",
     visualTheme: {
       badgeBg: "rgba(109, 40, 217, 0.08)",
       badgeText: "#6D28D9",
