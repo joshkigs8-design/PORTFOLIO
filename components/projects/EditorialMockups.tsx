@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 interface EditorialMockupProps {
-  type: "rentreceipt" | "farefinder" | "edupath" | "onfits" | "pesatrend" | "joshdata";
+  type: "rentreceipt" | "farefinder" | "edupath" | "onfits";
 }
 
 export function EditorialMockup({ type }: EditorialMockupProps) {

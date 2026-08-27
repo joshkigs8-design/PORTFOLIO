@@ -46,8 +46,6 @@ export const metadata: Metadata = {
     "FareFinder",
     "EduPath AI",
     "O&N FITS",
-    "PesaTrend",
-    "Josh Data Solution",
   ],
   authors: [{ name: siteConfig.name, url: "https://joshkigen.com" }],
   creator: siteConfig.name,

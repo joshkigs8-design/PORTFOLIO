@@ -35,14 +35,14 @@ export const siteConfig = {
   },
   stats: [
     {
-      number: "06+",
+      number: "04+",
       label: "Projects Built",
       subtext: "Tangible digital products shipped to market",
     },
     {
-      number: "05",
+      number: "04",
       label: "Industries",
-      subtext: "PropTech, Travel, EdTech, Fashion & FinTech",
+      subtext: "PropTech, Travel, EdTech & Fashion",
     },
     {
       number: "∞",

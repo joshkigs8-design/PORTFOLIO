@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { projectsData, ProjectItem } from "@/data/projectsData";
+import { projectsData } from "@/data/projectsData";
 import { EditorialMockup } from "@/components/projects/EditorialMockups";
 
 export function ProjectsShowcase() {
@@ -11,8 +11,6 @@ export function ProjectsShowcase() {
   const farefinder = projectsData.find((p) => p.id === "farefinder")!;
   const edupath = projectsData.find((p) => p.id === "edupath-ai")!;
   const onfits = projectsData.find((p) => p.id === "on-fits")!;
-  const pesatrend = projectsData.find((p) => p.id === "pesatrend")!;
-  const joshdata = projectsData.find((p) => p.id === "josh-data-solution")!;
 
   return (
     <section id="work" className="py-24 sm:py-36 bg-[#F6F1E8] border-t border-[#171717]/8">
@@ -199,89 +197,6 @@ export function ProjectsShowcase() {
             <EditorialMockup type="onfits" />
           </div>
         </motion.div>
-
-        {/* Editorial Row 05 & 06: PesaTrend & Josh Data Solution (2-Column Split) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10">
-          {/* Project 05: PesaTrend */}
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="p-6 sm:p-8 rounded-3xl bg-white border border-[#171717]/10 shadow-sm flex flex-col justify-between space-y-6"
-          >
-            <div className="space-y-4">
-              <div className="flex items-center justify-between text-xs font-mono">
-                <span className="font-bold text-[#0F5A3E]">{pesatrend.number} / {pesatrend.total}</span>
-                <span className="text-[#0F5A3E] bg-emerald-50 px-2.5 py-0.5 rounded-full font-semibold">
-                  {pesatrend.categoryTag}
-                </span>
-              </div>
-
-              <h3 className="text-2xl sm:text-4xl font-serif font-bold text-[#171717] tracking-tight uppercase">
-                {pesatrend.name}
-              </h3>
-
-              <p className="text-sm sm:text-base text-[#171717]/80 font-sans leading-relaxed">
-                {pesatrend.description}
-              </p>
-            </div>
-
-            <EditorialMockup type="pesatrend" />
-
-            <div className="pt-2">
-              <a
-                href={pesatrend.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-wider text-[#0F5A3E] hover:underline"
-              >
-                <span>EXPLORE PROJECT</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Project 06: Josh Data Solution */}
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="p-6 sm:p-8 rounded-3xl bg-white border border-[#171717]/10 shadow-sm flex flex-col justify-between space-y-6"
-          >
-            <div className="space-y-4">
-              <div className="flex items-center justify-between text-xs font-mono">
-                <span className="font-bold text-[#8B6B38]">{joshdata.number} / {joshdata.total}</span>
-                <span className="text-[#8B6B38] bg-amber-50 px-2.5 py-0.5 rounded-full font-semibold">
-                  {joshdata.categoryTag}
-                </span>
-              </div>
-
-              <h3 className="text-2xl sm:text-4xl font-serif font-bold text-[#171717] tracking-tight uppercase">
-                {joshdata.name}
-              </h3>
-
-              <p className="text-sm sm:text-base text-[#171717]/80 font-sans leading-relaxed">
-                {joshdata.description}
-              </p>
-            </div>
-
-            <EditorialMockup type="joshdata" />
-
-            <div className="pt-2">
-              <a
-                href={joshdata.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-wider text-[#8B6B38] hover:underline"
-              >
-                <span>EXPLORE SERVICES</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
-            </div>
-          </motion.div>
-        </div>
       </div>
     </section>
   );

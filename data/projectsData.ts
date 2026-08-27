@@ -21,7 +21,7 @@ export interface ProjectItem {
     accentColor: string;
     cardBg: string;
   };
-  mockupType: "rentreceipt" | "farefinder" | "edupath" | "onfits" | "pesatrend" | "joshdata";
+  mockupType: "rentreceipt" | "farefinder" | "edupath" | "onfits";
 }
 
 export const projectsData: ProjectItem[] = [
@@ -29,7 +29,7 @@ export const projectsData: ProjectItem[] = [
     id: "rentreceipt-pro",
     slug: "rentreceipt-pro",
     number: "01",
-    total: "06",
+    total: "04",
     name: "RentReceipt Pro",
     categoryTag: "PROPTECH / SAAS",
     industry: "Property Tech & Finance",
@@ -60,7 +60,7 @@ export const projectsData: ProjectItem[] = [
     id: "farefinder",
     slug: "farefinder",
     number: "02",
-    total: "06",
+    total: "04",
     name: "FareFinder",
     categoryTag: "TRAVEL / DIGITAL PRODUCT",
     industry: "Mobility & Transit Intelligence",
@@ -91,7 +91,7 @@ export const projectsData: ProjectItem[] = [
     id: "edupath-ai",
     slug: "edupath-ai",
     number: "03",
-    total: "06",
+    total: "04",
     name: "EduPath AI",
     categoryTag: "EDUCATION / AI",
     industry: "Education Technology & Career Advisory",
@@ -122,7 +122,7 @@ export const projectsData: ProjectItem[] = [
     id: "on-fits",
     slug: "on-fits",
     number: "04",
-    total: "06",
+    total: "04",
     name: "O&N FITS",
     categoryTag: "FASHION / BRAND",
     industry: "Fashion, Apparel & Digital Brand",
@@ -148,67 +148,5 @@ export const projectsData: ProjectItem[] = [
       cardBg: "#FFFFFF",
     },
     mockupType: "onfits",
-  },
-  {
-    id: "pesatrend",
-    slug: "pesatrend",
-    number: "05",
-    total: "06",
-    name: "PesaTrend",
-    categoryTag: "BUSINESS / POS",
-    industry: "Retail Intelligence & Financial POS",
-    tagline: "Point-of-sale and daily cashflow intelligence designed for small enterprise owners.",
-    headline: "Empowering everyday merchants with real-time sales auditing and till reconciliation.",
-    description:
-      "A business management concept designed to help small businesses track sales, payments and performance.",
-    extendedDescription:
-      "An offline-first POS progressive web application that synchronizes physical cash registers and M-Pesa Buy Goods tills, tracking fast-moving inventory items and generating daily profit margins automatically.",
-    role: "Product Architect & Full-Stack Developer",
-    technologies: ["React", "TypeScript", "PostgreSQL", "Tailwind CSS", "PWA Offline"],
-    metrics: [
-      { label: "Offline First", value: "100% PWA" },
-      { label: "Reconciliation", value: "Real-Time" },
-      { label: "Inventory Sync", value: "< 500ms" },
-    ],
-    liveUrl: "https://pesatrend.vercel.app",
-    displayUrl: "pesatrend.io",
-    visualTheme: {
-      badgeBg: "rgba(18, 55, 42, 0.08)",
-      badgeText: "#12372A",
-      accentColor: "#12372A",
-      cardBg: "#FFFFFF",
-    },
-    mockupType: "pesatrend",
-  },
-  {
-    id: "josh-data-solution",
-    slug: "josh-data-solution",
-    number: "06",
-    total: "06",
-    name: "Josh Data Solution",
-    categoryTag: "DIGITAL SERVICES",
-    industry: "Technology & Digital Solutions",
-    tagline: "Custom digital tools, data pipelines and software engineering for businesses.",
-    headline: "Bespoke digital architecture and technology solutions built for scaling operations.",
-    description:
-      "Technology and digital solutions built for everyday businesses and individuals.",
-    extendedDescription:
-      "Providing customized web engineering, database architecture, payment gateway integrations, and digital transformation consulting for regional businesses looking to modernize their workflow.",
-    role: "Founder & Principal Engineer",
-    technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Cloud Architecture"],
-    metrics: [
-      { label: "Uptime SLA", value: "99.9%" },
-      { label: "Architecture", value: "Bespoke" },
-      { label: "Support", value: "Dedicated" },
-    ],
-    liveUrl: "https://joshdatasolution.com",
-    displayUrl: "joshdatasolution.com",
-    visualTheme: {
-      badgeBg: "rgba(197, 164, 109, 0.15)",
-      badgeText: "#8B6B38",
-      accentColor: "#C5A46D",
-      cardBg: "#FFFFFF",
-    },
-    mockupType: "joshdata",
   },
 ];
