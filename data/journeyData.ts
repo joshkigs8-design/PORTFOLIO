@@ -61,7 +61,7 @@ export const journeyData: JourneyStage[] = [
     highlights: [
       "Live deployment of RentReceipt Pro across Kenyan property managers",
       "Launched FareFinder to simplify regional transit comparisons",
-      "Direct client software deployments through Josh Data Solution",
+      "Independent product deployments shaped by direct user feedback",
     ],
     mindsetQuote: "A product only becomes real when somebody uses it in the wild.",
   },

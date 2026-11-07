@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://joshkigen.com/sitemap.xml",
+    sitemap: "https://www.joshkigen.me/sitemap.xml",
   };
 }

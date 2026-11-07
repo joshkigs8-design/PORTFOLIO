@@ -29,7 +29,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://joshkigen.com"),
+  metadataBase: new URL("https://www.joshkigen.me"),
   title: {
     default: "Josh Kigen — Developer, Entrepreneur & Creative Builder",
     template: `%s | Josh Kigen`,
@@ -47,12 +47,12 @@ export const metadata: Metadata = {
     "EduPath AI",
     "O&N FITS",
   ],
-  authors: [{ name: siteConfig.name, url: "https://joshkigen.com" }],
+  authors: [{ name: siteConfig.name, url: "https://www.joshkigen.me" }],
   creator: siteConfig.name,
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://joshkigen.com",
+    url: "https://www.joshkigen.me",
     title: siteConfig.title,
     description: siteConfig.heroBio,
     siteName: siteConfig.name,
@@ -95,7 +95,7 @@ export default function RootLayout({
     },
     email: siteConfig.email,
     telephone: siteConfig.phone,
-    url: "https://joshkigen.com",
+    url: "https://www.joshkigen.me",
     sameAs: [
       siteConfig.socials.github,
       siteConfig.socials.linkedin,

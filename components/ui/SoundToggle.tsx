@@ -9,8 +9,10 @@ export function SoundToggle() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-    setIsMuted(sound.getMuted());
+    window.setTimeout(() => {
+      setMounted(true);
+      setIsMuted(sound.getMuted());
+    }, 0);
   }, []);
 
   if (!mounted) return null;

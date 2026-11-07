@@ -1,21 +1,6 @@
 "use client";
 
 import React from "react";
-import {
-  CheckCircle2,
-  Receipt,
-  Search,
-  MapPin,
-  Sparkles,
-  ArrowRight,
-  TrendingUp,
-  CreditCard,
-  Building2,
-  Server,
-  Layers,
-  GraduationCap,
-  ShoppingBag,
-} from "lucide-react";
 
 interface EditorialMockupProps {
   type: "rentreceipt" | "farefinder" | "edupath" | "onfits";
@@ -212,7 +197,7 @@ export function EditorialMockup({ type }: EditorialMockupProps) {
             O&amp;N FITS
           </span>
           <span className="text-[10px] font-mono tracking-widest text-[#C5A46D] uppercase">
-            // STUDIO LOOKBOOK SS26
+            &#47;&#47; STUDIO LOOKBOOK SS26
           </span>
         </div>
         <span className="text-[10px] font-mono text-white/80 bg-white/10 px-2.5 py-1 rounded border border-white/10">

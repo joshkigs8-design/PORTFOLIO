@@ -15,7 +15,7 @@ import { Footer } from "@/components/navigation/Footer";
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-screen bg-[#F6F1E8] text-[#171717] selection:bg-[#12372A] selection:text-[#F6F1E8]">
+    <div id="home" className="relative min-h-screen bg-[#F6F1E8] text-[#171717] selection:bg-[#12372A] selection:text-[#F6F1E8]">
       {/* Navigation */}
       <Navbar />
 

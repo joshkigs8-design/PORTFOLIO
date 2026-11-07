@@ -11,6 +11,7 @@ export function ProjectsShowcase() {
   const farefinder = projectsData.find((p) => p.id === "farefinder")!;
   const edupath = projectsData.find((p) => p.id === "edupath-ai")!;
   const onfits = projectsData.find((p) => p.id === "on-fits")!;
+  const codevanta = projectsData.find((p) => p.id === "codevanta-hub")!;
 
   return (
     <section id="work" className="py-24 sm:py-36 bg-[#F6F1E8] border-t border-[#171717]/8">
@@ -152,6 +153,52 @@ export function ProjectsShowcase() {
                 <span>EXPLORE PROJECT</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
+            </div>
+          </motion.div>
+
+          {/* Editorial Project 05: Codevanta Hub (Evolving Platform) */}
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-10 lg:p-12 rounded-3xl bg-[#173B2D] text-[#F6F1E8] border border-[#173B2D] shadow-xl"
+          >
+            <div className="lg:col-span-7 space-y-6">
+              <div className="flex items-center gap-3 text-xs font-mono">
+                <span className="font-bold text-[#C5A46D]">{codevanta.number} / {codevanta.total}</span>
+                <span className="text-white/40">·</span>
+                <span className="text-[#C5A46D] bg-white/10 px-2.5 py-0.5 rounded-full font-semibold">
+                  {codevanta.categoryTag}
+                </span>
+              </div>
+              <h3 className="text-3xl sm:text-5xl font-serif font-bold tracking-tight uppercase">
+                {codevanta.name}
+              </h3>
+              <p className="text-base sm:text-lg text-white/75 font-sans max-w-2xl leading-relaxed">
+                {codevanta.description}
+              </p>
+              <a
+                href={codevanta.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#F6F1E8] text-[#173B2D] text-xs font-mono font-bold tracking-wider hover:bg-white transition-colors"
+              >
+                <span>VISIT PLATFORM</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </div>
+            <div className="lg:col-span-5 rounded-2xl border border-white/15 bg-white/10 p-6 sm:p-8 min-h-56 flex flex-col justify-between">
+              <div className="flex items-center justify-between text-xs font-mono text-[#C5A46D]">
+                <span>CODEVANTA / HUB</span>
+                <span>EVOLVING</span>
+              </div>
+              <div className="space-y-3">
+                <div className="h-2 w-3/4 rounded-full bg-white/20" />
+                <div className="h-2 w-full rounded-full bg-white/10" />
+                <div className="h-2 w-5/6 rounded-full bg-white/10" />
+              </div>
+              <p className="text-xs font-mono text-white/55">A platform in progress, built around useful developer resources.</p>
             </div>
           </motion.div>
         </div>

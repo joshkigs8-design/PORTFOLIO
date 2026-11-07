@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowUpRight, ArrowDownRight, Sparkles } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 
 export function HeroSection() {
@@ -34,10 +34,10 @@ export function HeroSection() {
 
             {/* Editorial Headline: Sans + Serif Pairing */}
             <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[76px] font-sans font-black text-[#171717] tracking-tight uppercase leading-[1.05]">
-              I BUILD IDEAS <br />
-              <span className="font-serif italic font-normal text-[#171717] lowercase">into something </span>
+              I BUILD TECHNOLOGY <br />
+              <span className="font-serif italic font-normal text-[#171717] lowercase">that moves ideas </span>
               <span className="text-[#12372A] underline decoration-[#C5A46D] decoration-4 underline-offset-8">
-                REAL.
+                forward.
               </span>
             </h1>
 

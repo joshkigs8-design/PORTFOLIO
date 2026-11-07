@@ -115,9 +115,11 @@ export const siteConfig = {
     },
   ],
   navLinks: [
+    { label: "HOME", href: "#home" },
     { label: "ABOUT", href: "#about" },
     { label: "WORK", href: "#work" },
-    { label: "EXPERIENCE", href: "#experience" },
+    { label: "EXPERTISE", href: "#expertise" },
+    { label: "JOURNEY", href: "#journey" },
     { label: "CONTACT", href: "#contact" },
   ],
 };

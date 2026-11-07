@@ -7,7 +7,7 @@ import { siteConfig } from "@/data/siteConfig";
 
 export function JourneyTimeline() {
   return (
-    <section className="py-24 sm:py-32 bg-[#FAF7F2] border-t border-[#171717]/8">
+    <section id="journey" className="py-24 sm:py-32 bg-[#FAF7F2] border-t border-[#171717]/8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 space-y-16">
         {/* Section Header */}
         <div className="max-w-3xl space-y-4">

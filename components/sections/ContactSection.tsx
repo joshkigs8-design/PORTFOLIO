@@ -1,15 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import {
   ArrowUpRight,
-  Mail,
   Copy,
   Check,
-  Send,
   MessageCircle,
-  Phone,
 } from "lucide-react";
 import { XTwitterIcon, GithubIcon, LinkedinIcon, InstagramIcon } from "@/components/ui/Icons";
 import { siteConfig } from "@/data/siteConfig";
@@ -17,10 +13,10 @@ import { siteConfig } from "@/data/siteConfig";
 export function ContactSection() {
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
-  const [formSent, setFormSent] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
 
@@ -38,8 +34,8 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.message) return;
-    setFormSent(true);
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`;
+    window.location.href = `mailto:${siteConfig.email}?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
@@ -67,29 +63,14 @@ export function ContactSection() {
           {/* Left: Clean Message Box */}
           <div className="lg:col-span-7">
             <div className="p-8 sm:p-10 rounded-3xl bg-white border border-[#171717]/10 shadow-sm">
-              {formSent ? (
-                <div className="py-12 text-center space-y-3">
-                  <div className="text-2xl font-serif font-bold text-[#12372A]">
-                    Message Dispatched.
-                  </div>
-                  <p className="text-sm text-[#171717]/70 font-sans max-w-sm mx-auto">
-                    Thank you for reaching out. Josh will review your note and get back to you shortly.
-                  </p>
-                  <button
-                    onClick={() => setFormSent(false)}
-                    className="mt-4 text-xs font-mono text-[#12372A] underline font-bold"
-                  >
-                    Send another message
-                  </button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-xs font-mono font-bold uppercase tracking-wider text-[#171717]/70">
+                      <label htmlFor="contact-name" className="text-xs font-mono font-bold uppercase tracking-wider text-[#171717]/70">
                         Your Name
                       </label>
                       <input
+                        id="contact-name"
                         type="text"
                         required
                         placeholder="Alex Morgan"
@@ -100,10 +81,11 @@ export function ContactSection() {
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-xs font-mono font-bold uppercase tracking-wider text-[#171717]/70">
+                      <label htmlFor="contact-email" className="text-xs font-mono font-bold uppercase tracking-wider text-[#171717]/70">
                         Email Address
                       </label>
                       <input
+                        id="contact-email"
                         type="email"
                         required
                         placeholder="alex@company.com"
@@ -115,10 +97,26 @@ export function ContactSection() {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-xs font-mono font-bold uppercase tracking-wider text-[#171717]/70">
+                    <label htmlFor="contact-subject" className="text-xs font-mono font-bold uppercase tracking-wider text-[#171717]/70">
+                      Subject
+                    </label>
+                    <input
+                      id="contact-subject"
+                      type="text"
+                      required
+                      placeholder="A product, idea or collaboration"
+                      value={formData.subject}
+                      onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                      className="w-full px-4 py-3 rounded-xl bg-[#FAF7F2] border border-[#171717]/10 text-[#171717] placeholder-[#171717]/30 text-sm focus:outline-none focus:border-[#12372A] transition-colors"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="contact-message" className="text-xs font-mono font-bold uppercase tracking-wider text-[#171717]/70">
                       Your Idea / Project Goals
                     </label>
                     <textarea
+                      id="contact-message"
                       required
                       rows={4}
                       placeholder="Tell me what you're looking to create, timeline, or what you'd like to collaborate on..."
@@ -136,7 +134,6 @@ export function ContactSection() {
                     <ArrowUpRight className="w-4 h-4" />
                   </button>
                 </form>
-              )}
             </div>
           </div>
 

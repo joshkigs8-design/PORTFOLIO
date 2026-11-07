@@ -5,11 +5,6 @@ import { Metadata } from "next";
 import {
   ArrowLeft,
   ArrowUpRight,
-  CheckCircle2,
-  Lightbulb,
-  Cpu,
-  Layers,
-  Sparkles,
 } from "lucide-react";
 import { projectsData } from "@/data/projectsData";
 import { EditorialMockup } from "@/components/projects/EditorialMockups";
@@ -88,16 +83,6 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         {/* Mockup Visual */}
         <div className="rounded-3xl overflow-hidden shadow-sm bg-white p-2 border border-[#171717]/10">
           <EditorialMockup type={project.mockupType} />
-        </div>
-
-        {/* Metrics Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-6 sm:p-8 rounded-3xl bg-white border border-[#171717]/10">
-          {project.metrics.map((m) => (
-            <div key={m.label} className="space-y-1">
-              <div className="text-[11px] font-mono text-[#171717]/60 uppercase">{m.label}</div>
-              <div className="text-xl sm:text-2xl font-serif font-bold text-[#12372A]">{m.value}</div>
-            </div>
-          ))}
         </div>
 
         {/* Narrative & Description */}

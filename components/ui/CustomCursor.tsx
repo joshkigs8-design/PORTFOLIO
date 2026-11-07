@@ -19,7 +19,7 @@ export function CustomCursor() {
   useEffect(() => {
     // Disable on touch devices
     if (window.matchMedia("(pointer: coarse)").matches || "ontouchstart" in window) {
-      setIsTouchDevice(true);
+      window.setTimeout(() => setIsTouchDevice(true), 0);
       return;
     }
 

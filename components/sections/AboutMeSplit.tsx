@@ -3,8 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { MapPin, GraduationCap, Building2, Heart } from "lucide-react";
-import { siteConfig } from "@/data/siteConfig";
+import { MapPin, GraduationCap, Building2 } from "lucide-react";
 
 export function AboutMeSplit() {
   return (

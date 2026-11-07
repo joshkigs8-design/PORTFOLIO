@@ -12,7 +12,6 @@ export interface ProjectItem {
   extendedDescription: string;
   role: string;
   technologies: string[];
-  metrics: { label: string; value: string }[];
   liveUrl?: string;
   displayUrl?: string;
   visualTheme: {
@@ -41,11 +40,6 @@ export const projectsData: ProjectItem[] = [
       "Engineered to replace chaotic spreadsheets and manual paper receipts with automated M-Pesa payment tracking, cryptographic digital PDF receipts, instant SMS alerts, and clear cashflow forecasting.",
     role: "Sole Creator & Lead Architect",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL", "M-Pesa Daraja API"],
-    metrics: [
-      { label: "Verification", value: "Instant" },
-      { label: "PDF Generation", value: "< 1.2s" },
-      { label: "Ledger Accuracy", value: "99.9%" },
-    ],
     liveUrl: "https://rentreceipt.co.ke",
     displayUrl: "rentreceipt.co.ke",
     visualTheme: {
@@ -72,11 +66,6 @@ export const projectsData: ProjectItem[] = [
       "FareFinder aggregates inter-county transit operators, bus schedules, and fare matrixes across 50+ regional hubs into a clean, intuitive map-inspired interface with real-time price comparison.",
     role: "Lead Product Designer & Developer",
     technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "GeoJSON"],
-    metrics: [
-      { label: "Search Latency", value: "< 250ms" },
-      { label: "Transit Hubs", value: "50+ Routes" },
-      { label: "Fare Transparency", value: "100%" },
-    ],
     liveUrl: "https://farefinder.vercel.app",
     displayUrl: "farefinder.app",
     visualTheme: {
@@ -103,11 +92,6 @@ export const projectsData: ProjectItem[] = [
       "Calculates precise KUCCPS weighted cluster points from KCSE subject grades and provides algorithmic course recommendations with realistic admission probabilities across Kenyan public and private universities.",
     role: "Product Architect & AI Engineer",
     technologies: ["Next.js", "TypeScript", "AI Models", "Tailwind CSS", "PostgreSQL"],
-    metrics: [
-      { label: "Cluster Calculator", value: "KUCCPS Exact" },
-      { label: "Guidance Time", value: "< 2 mins" },
-      { label: "Career Fields", value: "30+ Clusters" },
-    ],
     liveUrl: "https://edupathai.site",
     displayUrl: "edupathai.site",
     visualTheme: {
@@ -134,11 +118,6 @@ export const projectsData: ProjectItem[] = [
       "An editorial digital flagship store merging high-fashion lookbook storytelling, bespoke typography, and friction-free shopping with responsive garment sizing conversion and instant checkout.",
     role: "Brand Co-Creator & Web Director",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Headless Commerce", "Framer Motion"],
-    metrics: [
-      { label: "Editorial Speed", value: "0.8s" },
-      { label: "Mobile Conversion", value: "+40%" },
-      { label: "Brand Aesthetic", value: "Luxury High-End" },
-    ],
     liveUrl: "https://oandnfits.co.ke",
     displayUrl: "oandnfits.co.ke",
     visualTheme: {
@@ -148,5 +127,31 @@ export const projectsData: ProjectItem[] = [
       cardBg: "#FFFFFF",
     },
     mockupType: "onfits",
+  },
+  {
+    id: "codevanta-hub",
+    slug: "codevanta-hub",
+    number: "05",
+    total: "05",
+    name: "Codevanta Hub",
+    categoryTag: "DEVELOPER ECOSYSTEM",
+    industry: "Technology & Developer Resources",
+    tagline: "A digital ecosystem for developer resources, tools and useful opportunities.",
+    headline: "A growing home for practical resources and opportunities for developers.",
+    description:
+      "A digital ecosystem focused on developer resources, technology tools and useful opportunities for developers.",
+    extendedDescription:
+      "Codevanta Hub brings useful developer-focused material into one accessible digital space. It is presented here as an evolving platform rather than a finished claim about scale or impact.",
+    role: "Builder",
+    technologies: ["Web Platform", "TypeScript", "Next.js"],
+    liveUrl: "https://codevanta.online/",
+    displayUrl: "codevanta.online",
+    visualTheme: {
+      badgeBg: "rgba(18, 55, 42, 0.08)",
+      badgeText: "#12372A",
+      accentColor: "#12372A",
+      cardBg: "#FFFFFF",
+    },
+    mockupType: "farefinder",
   },
 ];
